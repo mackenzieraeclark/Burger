@@ -1,0 +1,32 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "\"Eat-Da-Burger\" is a popular exercise in the fundamentals of MVC and designing an ORM. This application is built with MySQL, Node, Express, and Handlebars, and inspired by the show Bob's Burgers. Today's special is the Fig-eta Bout It.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackenzieraeclark/burger.git"
+  },
+  "keywords": [
+    "MySQL",
+    "Node",
+    "Express",
+    "Handlebars",
+    "MVC",
+    "ORM"
+  ],
+  "author": "Mackenzie Clar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mackenzieraeclark/burger/issues"
+  },
+  "homepage": "https://github.com/mackenzieraeclark/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
