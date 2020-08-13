@@ -19,3 +19,5 @@ let burger = {
     }
 };
 
+// Export to controller
+module.exports = burger;
