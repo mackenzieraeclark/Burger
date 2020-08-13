@@ -4,5 +4,5 @@ var connection = require("./connection");
 // `insertOne()`
 // `updateOne()`
 
-// Export ORM
+// Export ORM to model
 module.exports = orm;

@@ -1,23 +1,29 @@
-let orm = require("../config/orm.js");
+// Import ORM
+var orm = require("../config/orm.js");
 
-// Use CRUD for the ORM functions
-let burger = {
-    all: function(db) {
+// Use CRUD for ORM functions
+var burger = {
+    all: function(cb) {
         orm.all("burgers", function(res) {
             cb(res);
         });
     },
-    create: function(cols, vals, db){
-        orm.create("burgers", cols, vals, function(res){
-            db(res);
+    create: function(cols, vals, cb) {
+        orm.create("burgers", cols, vals, function(res) {
+          cb(res);
         });
-    },
-    update: function(objColVals, condition, db){
-        orm.update("burgers", objColVals, condition, function(res){
-            db(res);
+      },
+    update: function(objColVals, condition, cb) {
+        orm.update("burgers", objColVals, condition, function(res) {
+          cb(res);
         });
-    }
-};
+      },
+    delete: function(condition, cb) {
+        orm.delete("burgers", condition, function(res) {
+          cb(res);
+        });
+      }
+    };
 
 // Export to controller
 module.exports = burger;
